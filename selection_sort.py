@@ -1,8 +1,8 @@
 from typing import List
 
-def selection_sort(A:List[int], N:int):
+def selection_sort(A: List[int], N: int):
     # 定義找到子陣列中最小元素索引的函數
-    def minimum(A:List[int], start:int, N:int):
+    def minimum(A: List[int], start: int, N: int):
         min_index = start
         for j in range(start + 1, N):
             if A[j] < A[min_index]:
